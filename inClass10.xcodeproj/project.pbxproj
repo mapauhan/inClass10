@@ -13,6 +13,8 @@
 		B9F7B000225A663C00935760 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7AFFD225A663A00935760 /* LoginViewController.swift */; };
 		B9F7B001225A663C00935760 /* ForumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7AFFE225A663C00935760 /* ForumsViewController.swift */; };
 		B9F7B003225A66C000935760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7B002225A66C000935760 /* AppDelegate.swift */; };
+		B9F7B006225A71D500935760 /* ForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7B004225A71D500935760 /* ForumTableViewCell.swift */; };
+		B9F7B007225A71D500935760 /* ForumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F7B005225A71D500935760 /* ForumTableViewCell.xib */; };
 		C6169AEA2255752000007FC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6169AE82255752000007FC0 /* Main.storyboard */; };
 		C6169AEC2255752100007FC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6169AEB2255752100007FC0 /* Assets.xcassets */; };
 		C6169AEF2255752100007FC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6169AED2255752100007FC0 /* LaunchScreen.storyboard */; };
@@ -28,6 +30,8 @@
 		B9F7AFFD225A663A00935760 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B9F7AFFE225A663C00935760 /* ForumsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumsViewController.swift; sourceTree = "<group>"; };
 		B9F7B002225A66C000935760 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../../../Desktop/InClass09/InClass09/AppDelegate.swift; sourceTree = "<group>"; };
+		B9F7B004225A71D500935760 /* ForumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
+		B9F7B005225A71D500935760 /* ForumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForumTableViewCell.xib; sourceTree = "<group>"; };
 		C6169AE12255752000007FC0 /* inClass10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inClass10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6169AE92255752000007FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6169AEB2255752100007FC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				C6169AEB2255752100007FC0 /* Assets.xcassets */,
 				C6169AED2255752100007FC0 /* LaunchScreen.storyboard */,
 				C6169AF02255752100007FC0 /* Info.plist */,
+				B9F7B004225A71D500935760 /* ForumTableViewCell.swift */,
+				B9F7B005225A71D500935760 /* ForumTableViewCell.xib */,
 			);
 			path = inClass10;
 			sourceTree = "<group>";
@@ -166,6 +172,7 @@
 				C6169AEF2255752100007FC0 /* LaunchScreen.storyboard in Resources */,
 				C6169AF722557C6D00007FC0 /* GoogleService-Info.plist in Resources */,
 				C6169AEC2255752100007FC0 /* Assets.xcassets in Resources */,
+				B9F7B007225A71D500935760 /* ForumTableViewCell.xib in Resources */,
 				C6169AEA2255752000007FC0 /* Main.storyboard in Resources */,
 				B9F7AFF3225A58EB00935760 /* inClass10.xcworkspace in Resources */,
 			);
@@ -224,6 +231,7 @@
 				B9F7B001225A663C00935760 /* ForumsViewController.swift in Sources */,
 				B9F7B000225A663C00935760 /* LoginViewController.swift in Sources */,
 				B9F7AFFF225A663C00935760 /* SignUpViewController.swift in Sources */,
+				B9F7B006225A71D500935760 /* ForumTableViewCell.swift in Sources */,
 				B9F7B003225A66C000935760 /* AppDelegate.swift in Sources */,
 				C643AD7E225599310076FCE6 /* NewForumViewController.swift in Sources */,
 			);

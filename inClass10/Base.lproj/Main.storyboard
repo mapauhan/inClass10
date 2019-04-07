@@ -107,31 +107,49 @@
                     <view key="view" contentMode="scaleToFill" id="6J1-Zr-ceA" customClass="For">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tOx-Ny-i7X">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="bFe-pC-7JR" id="iEQ-xG-Ovl"/>
+                                    <outlet property="delegate" destination="bFe-pC-7JR" id="gak-5G-OBQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tOx-Ny-i7X" firstAttribute="trailing" secondItem="Fpn-bu-sNU" secondAttribute="trailing" id="FDF-dV-eT4"/>
+                            <constraint firstItem="tOx-Ny-i7X" firstAttribute="leading" secondItem="Fpn-bu-sNU" secondAttribute="leading" id="Yav-N1-Anf"/>
+                            <constraint firstItem="tOx-Ny-i7X" firstAttribute="bottom" secondItem="Fpn-bu-sNU" secondAttribute="bottom" id="jLd-g6-vcu"/>
+                            <constraint firstItem="tOx-Ny-i7X" firstAttribute="top" secondItem="Fpn-bu-sNU" secondAttribute="top" id="uDw-Mu-w5d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fpn-bu-sNU"/>
                     </view>
                     <navigationItem key="navigationItem" title="Forums" id="qVg-g8-GVT">
                         <barButtonItem key="leftBarButtonItem" systemItem="add" id="HeI-Dp-NAI">
                             <connections>
-                                <segue destination="v7O-oq-mcw" kind="presentation" id="VjK-RK-Br6"/>
+                                <action selector="addButtonClicked:" destination="bFe-pC-7JR" id="Yya-Un-7iD"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="9gQ-ev-7r5">
                             <connections>
-                                <action selector="logoutClicked:" destination="ld3-2h-0GR" id="hGz-dl-TUz"/>
+                                <action selector="logoutClicked:" destination="bFe-pC-7JR" id="xfb-SY-Pdc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="tOx-Ny-i7X" id="21k-tq-Crx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vH4-nG-9J5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="ld3-2h-0GR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2920.8000000000002" y="-36.431784107946029"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="X1t-Gl-dqs">
             <objects>
-                <viewController storyboardIdentifier="SignUpVC" id="PiR-7i-lvG" customClass="SignUpViewController" customModule="inClass10" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PiR-7i-lvG" customClass="SignUpViewController" customModule="inClass10" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PfP-DS-2mN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +233,6 @@
                     <navigationItem key="navigationItem" title="Sign Up" id="VYq-bT-P0g"/>
                     <connections>
                         <outlet property="emailTextField" destination="x9m-Pa-zVa" id="teK-Mz-yOH"/>
-                        <outlet property="firstLastName" destination="kuH-Ra-jjw" id="EFE-r3-8Hd"/>
                         <outlet property="nameTextField" destination="kuH-Ra-jjw" id="O3V-8x-hX2"/>
                         <outlet property="passwordTextField" destination="RvL-xM-qDJ" id="LCC-JE-lEr"/>
                     </connections>
