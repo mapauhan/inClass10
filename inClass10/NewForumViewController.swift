@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NewForumViewController.swift
 //  inClass10
 //
 //  Created by Handschu, Maria on 4/3/19.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NewForumViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
-
-
+  
 }
-
