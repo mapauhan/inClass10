@@ -1,0 +1,6 @@
+framework module Pods_inClass10 {
+  umbrella header "Pods-inClass10-umbrella.h"
+
+  export *
+  module * { export * }
+}

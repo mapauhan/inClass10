@@ -8,6 +8,20 @@
 
 import Foundation
 
+//class Forums {
+//
+//    var forums: [String:Any]?
+//
+//
+//    init(_ data: [String:Any]) {
+//
+//        forums = data
+//
+//        print("forums \(forums)")
+//    }
+//
+//}
+
 class Forum {
     
     var forums: [String:Any]?

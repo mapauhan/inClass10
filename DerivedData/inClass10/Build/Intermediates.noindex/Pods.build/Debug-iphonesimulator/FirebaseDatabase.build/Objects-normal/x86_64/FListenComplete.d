@@ -1,0 +1,7 @@
+dependencies: \
+  /Users/Maripau/Documents/Spring\ 2019/MobileApp\ /inClass10/Pods/FirebaseDatabase/Firebase/Database/FListenComplete.m \
+  /Users/Maripau/Documents/Spring\ 2019/MobileApp\ /inClass10/DerivedData/inClass10/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseDatabase.build/module.modulemap \
+  /Users/Maripau/Documents/Spring\ 2019/MobileApp\ /inClass10/Pods/FirebaseDatabase/Firebase/Database/FListenComplete.h \
+  /Users/Maripau/Documents/Spring\ 2019/MobileApp\ /inClass10/Pods/FirebaseDatabase/Firebase/Database/Core/Operation/FOperation.h \
+  /Users/Maripau/Documents/Spring\ 2019/MobileApp\ /inClass10/Pods/FirebaseDatabase/Firebase/Database/Core/Operation/FOperationSource.h \
+  /Users/Maripau/Documents/Spring\ 2019/MobileApp\ /inClass10/Pods/FirebaseDatabase/Firebase/Database/Core/Utilities/FPath.h
