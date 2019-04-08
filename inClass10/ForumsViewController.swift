@@ -21,6 +21,7 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.register(cellNib, forCellReuseIdentifier: "forumCell")
 
         let ref = Database.database().reference()
+        
         ref.child("/").observeSingleEvent(of: .value) { (snapshot) in
             if snapshot != nil {
                 self.forums = snapshot.value as? [String:Any]
@@ -32,10 +33,10 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         /**
          
          // ref.child("forums/likes").setValue(15)
-         //        ref.childByAutoId().setValue(["author": "bsmith", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 28, "comment": "awesome!"])
-         //        ref.childByAutoId().setValue(["author": "mjh", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 108, "comment": "i'm confused"])
-         //        ref.childByAutoId().setValue(["author": "lorena", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 48, "comment": "que es esto"])
-         //        ref.childByAutoId().setValue(["author": "liz", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 0, "comment": "HELLO?!?!!"])
+                 ref.childByAutoId().setValue(["author": "bsmith", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 28, "comment": "awesome!"])
+                 ref.childByAutoId().setValue(["author": "mjh", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 108, "comment": "i'm confused"])
+                 ref.childByAutoId().setValue(["author": "lorena", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 48, "comment": "que es esto"])
+                 ref.childByAutoId().setValue(["author": "liz", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 0, "comment": "HELLO?!?!!"])
 
          
          **/
@@ -78,11 +79,26 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "forumCell", for: indexPath) as! ForumTableViewCell
         
-        let data = Forum(((self.forums) as? [String:Any]!)!)
-        let forum = Data1(data as! [String:Any])
+        let data = Forum((self.forums as? [String:Any]!)!)
+        //let forum = Data1(data as! [String:Any])
+        var myForums = data.posts
         
-        cell.nameLabel.text = forum.author
-        cell.multiTextLabel.text = forum.text
+        let fd = myForums[indexPath.row]
+        
+            cell.nameLabel.text = fd.author! as? String
+            cell.likesLabel.text = fd.likes! as? String
+            cell.multiTextLabel.text = fd.text as? String
+
+   //     }
+
+        
+ //       let rec = Forum(data.forums as! [String:Any])
+
+        
+        //let forumData = rec.value as! [String:Any]
+        
+        //cell.nameLabel.text = forum.author
+        //cell.multiTextLabel.text = forum.text
         
         return cell
     }

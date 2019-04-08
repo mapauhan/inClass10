@@ -42,6 +42,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    static func showLogin(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "LoginVC")
+        appDelegate.window?.rootViewController = vc
+        appDelegate.window?.makeKeyAndVisible()
+    }
+    
+    static func showSignUp(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "SignUpVC")
+        appDelegate.window?.rootViewController = vc
+        appDelegate.window?.makeKeyAndVisible()
+    }
+    
+    static func showContacts(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ContactsVC")
+        appDelegate.window?.rootViewController = vc
+        appDelegate.window?.makeKeyAndVisible()
+    }
 
+    static func showForums(){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ForumsVC")
+        appDelegate.window?.rootViewController = vc
+        appDelegate.window?.makeKeyAndVisible()
+    }
 }
 
