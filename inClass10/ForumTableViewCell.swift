@@ -24,8 +24,7 @@ class ForumTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        trashIcon.image = UIImage(named: "rubbish-bin")
-        heartIcon.image = UIImage(named: "like_favorite")
+        
         
     }
         override func setSelected(_ selected: Bool, animated: Bool) {
