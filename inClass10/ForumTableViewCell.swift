@@ -8,6 +8,11 @@
 
 import UIKit
 
+//protocol CellDelegate {
+//    func deleteClicked(cell: UITableViewCell)
+//    func likedClicked(cell: UITableViewCell)
+//}
+
 class ForumTableViewCell: UITableViewCell {
     
     
@@ -19,13 +24,10 @@ class ForumTableViewCell: UITableViewCell {
     @IBOutlet weak var trashIcon: UIImageView!
     @IBOutlet weak var heartIcon: UIImageView!
     
-    
-    
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        trashIcon.image = UIImage(named: "rubbish-bin")
-        heartIcon.image = UIImage(named: "like_favorite")
         
     }
         override func setSelected(_ selected: Bool, animated: Bool) {
@@ -35,4 +37,5 @@ class ForumTableViewCell: UITableViewCell {
         }
         
     }
+
 

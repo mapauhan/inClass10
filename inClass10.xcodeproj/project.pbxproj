@@ -16,6 +16,7 @@
 		B9F7B006225A71D500935760 /* ForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7B004225A71D500935760 /* ForumTableViewCell.swift */; };
 		B9F7B007225A71D500935760 /* ForumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F7B005225A71D500935760 /* ForumTableViewCell.xib */; };
 		B9F7B009225AA86D00935760 /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7B008225AA86D00935760 /* Forum.swift */; };
+		B9F7B00B225BBF0D00935760 /* ForumsTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7B00A225BBF0D00935760 /* ForumsTwoViewController.swift */; };
 		C6169AEA2255752000007FC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6169AE82255752000007FC0 /* Main.storyboard */; };
 		C6169AEC2255752100007FC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6169AEB2255752100007FC0 /* Assets.xcassets */; };
 		C6169AEF2255752100007FC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6169AED2255752100007FC0 /* LaunchScreen.storyboard */; };
@@ -34,6 +35,7 @@
 		B9F7B004225A71D500935760 /* ForumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
 		B9F7B005225A71D500935760 /* ForumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForumTableViewCell.xib; sourceTree = "<group>"; };
 		B9F7B008225AA86D00935760 /* Forum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
+		B9F7B00A225BBF0D00935760 /* ForumsTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumsTwoViewController.swift; sourceTree = "<group>"; };
 		C6169AE12255752000007FC0 /* inClass10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inClass10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6169AE92255752000007FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6169AEB2255752100007FC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				B9F7B004225A71D500935760 /* ForumTableViewCell.swift */,
 				B9F7B005225A71D500935760 /* ForumTableViewCell.xib */,
 				B9F7B008225AA86D00935760 /* Forum.swift */,
+				B9F7B00A225BBF0D00935760 /* ForumsTwoViewController.swift */,
 			);
 			path = inClass10;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				B9F7B009225AA86D00935760 /* Forum.swift in Sources */,
 				B9F7AFFF225A663C00935760 /* SignUpViewController.swift in Sources */,
 				B9F7B006225A71D500935760 /* ForumTableViewCell.swift in Sources */,
+				B9F7B00B225BBF0D00935760 /* ForumsTwoViewController.swift in Sources */,
 				B9F7B003225A66C000935760 /* AppDelegate.swift in Sources */,
 				C643AD7E225599310076FCE6 /* NewForumViewController.swift in Sources */,
 			);
