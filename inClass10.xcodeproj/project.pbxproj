@@ -15,6 +15,7 @@
 		B9F7B003225A66C000935760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7B002225A66C000935760 /* AppDelegate.swift */; };
 		B9F7B006225A71D500935760 /* ForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7B004225A71D500935760 /* ForumTableViewCell.swift */; };
 		B9F7B007225A71D500935760 /* ForumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9F7B005225A71D500935760 /* ForumTableViewCell.xib */; };
+		B9F7B009225AA86D00935760 /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7B008225AA86D00935760 /* Forum.swift */; };
 		C6169AEA2255752000007FC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6169AE82255752000007FC0 /* Main.storyboard */; };
 		C6169AEC2255752100007FC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6169AEB2255752100007FC0 /* Assets.xcassets */; };
 		C6169AEF2255752100007FC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6169AED2255752100007FC0 /* LaunchScreen.storyboard */; };
@@ -32,6 +33,7 @@
 		B9F7B002225A66C000935760 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../../../Desktop/InClass09/InClass09/AppDelegate.swift; sourceTree = "<group>"; };
 		B9F7B004225A71D500935760 /* ForumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
 		B9F7B005225A71D500935760 /* ForumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForumTableViewCell.xib; sourceTree = "<group>"; };
+		B9F7B008225AA86D00935760 /* Forum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
 		C6169AE12255752000007FC0 /* inClass10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = inClass10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6169AE92255752000007FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6169AEB2255752100007FC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				C6169AF02255752100007FC0 /* Info.plist */,
 				B9F7B004225A71D500935760 /* ForumTableViewCell.swift */,
 				B9F7B005225A71D500935760 /* ForumTableViewCell.xib */,
+				B9F7B008225AA86D00935760 /* Forum.swift */,
 			);
 			path = inClass10;
 			sourceTree = "<group>";
@@ -187,20 +190,22 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-inClass10/Pods-inClass10-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-inClass10/Pods-inClass10-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-inClass10/Pods-inClass10-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-inClass10/Pods-inClass10-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F7BA0B8AA1468FFE21CABA43 /* [CP] Check Pods Manifest.lock */ = {
@@ -230,6 +235,7 @@
 			files = (
 				B9F7B001225A663C00935760 /* ForumsViewController.swift in Sources */,
 				B9F7B000225A663C00935760 /* LoginViewController.swift in Sources */,
+				B9F7B009225AA86D00935760 /* Forum.swift in Sources */,
 				B9F7AFFF225A663C00935760 /* SignUpViewController.swift in Sources */,
 				B9F7B006225A71D500935760 /* ForumTableViewCell.swift in Sources */,
 				B9F7B003225A66C000935760 /* AppDelegate.swift in Sources */,

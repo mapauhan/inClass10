@@ -8,22 +8,44 @@
 
 import UIKit
 import FirebaseAuth
+import Firebase
 
 class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-
+    var forums: [String:Any]?
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let cellNib = UINib(nibName: "ForumTableViewCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "forumCell")
+
+        let ref = Database.database().reference()
+        ref.child("/").observeSingleEvent(of: .value) { (snapshot) in
+            if snapshot != nil {
+                self.forums = snapshot.value as? [String:Any]
+                self.tableView.reloadData()
+            }
+            
+        }
         
-    }
+        /**
+         
+         // ref.child("forums/likes").setValue(15)
+         //        ref.childByAutoId().setValue(["author": "bsmith", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 28, "comment": "awesome!"])
+         //        ref.childByAutoId().setValue(["author": "mjh", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 108, "comment": "i'm confused"])
+         //        ref.childByAutoId().setValue(["author": "lorena", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 48, "comment": "que es esto"])
+         //        ref.childByAutoId().setValue(["author": "liz", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 0, "comment": "HELLO?!?!!"])
+
+         
+         **/
+
+}
     
     @IBAction func addButtonClicked(_ sender: Any) {
         
         //AppDelegate.showForums()
-    }
+}
     
     @IBAction func logoutClicked(_ sender: Any) {
         //logout user in firebase first
@@ -39,16 +61,28 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
     }
     
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        
+        if self.forums == nil {
+            return 0
+        } else {
+        
+        return forums!.count
     }
+}
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "forumCell", for: indexPath) as! ForumTableViewCell
+        
+        let data = Forum(((self.forums) as? [String:Any]!)!)
+        let forum = Data1(data as! [String:Any])
+        
+        cell.nameLabel.text = forum.author
+        cell.multiTextLabel.text = forum.text
         
         return cell
     }
