@@ -207,6 +207,7 @@ SWIFT_CLASS("_TtC9inClass1018ForumTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 @property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified multiTextLabel;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified likesLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified idKey;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified trashIcon;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified heartIcon;
 - (void)awakeFromNib;
@@ -215,16 +216,20 @@ SWIFT_CLASS("_TtC9inClass1018ForumTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITableView;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC9inClass1023ForumsTwoViewController")
-@interface ForumsTwoViewController : UIViewController
+@interface ForumsTwoViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITableView;
 @class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC9inClass1020ForumsViewController")
@@ -237,9 +242,12 @@ SWIFT_CLASS("_TtC9inClass1020ForumsViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 @class UITextField;
 

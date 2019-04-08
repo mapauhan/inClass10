@@ -18,15 +18,15 @@
 	<string>GTMSessionFetcher</string>
 	<string>FirebaseInstanceID</string>
 	<string>FirebaseAuthInterop</string>
-	<string>FirebaseMLVisionLabelModel</string>
 	<string>FirebaseMLNLSmartReply</string>
 	<string>FirebaseFirestore</string>
 	<string>FirebaseMLNLLanguageID</string>
-	<string>CoreServices</string>
-	<string>unicode</string>
+	<string>FirebaseMLVisionLabelModel</string>
 	<string>FirebaseMLVisionFaceModel</string>
 	<string>FirebaseDatabase</string>
+	<string>unicode</string>
 	<string>FirebaseRemoteConfig</string>
+	<string>CoreServices</string>
 	<string>FirebaseMLNaturalLanguage</string>
 	<string>Crashlytics</string>
 	<string>FirebaseMLVision</string>
@@ -36,9 +36,9 @@
 	<string>Security</string>
 	<string>FirebaseMLModelInterpreter</string>
 	<string>Fabric</string>
-	<string>GameKit</string>
 	<string>FirebaseCrash</string>
 	<string>WatchKit</string>
+	<string>GameKit</string>
 	<string>FirebaseInvites</string>
 	<string>netinet</string>
 	<string>FirebaseStorage</string>

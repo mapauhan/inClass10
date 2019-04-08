@@ -97,6 +97,7 @@
                                 <rect key="frame" x="32" y="148" width="311" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forum Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYx-Dg-Ru3">
@@ -132,28 +133,59 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zty-aM-UPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3695" y="-36"/>
+            <point key="canvasLocation" x="2004" y="743"/>
         </scene>
-        <!--Forums-->
+        <!--Forum-->
         <scene sceneID="Oaw-o8-ExC">
             <objects>
                 <viewController id="zh0-l0-1qA" customClass="ForumsTwoViewController" customModule="inClass10" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X0s-iE-6GV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" sectionIndexMinimumDisplayRowCount="2" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Op5-D6-G6r">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" rowHeight="127" id="POg-be-vev">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="127"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="POg-be-vev" id="bng-5A-fEg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="126.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="zh0-l0-1qA" id="7BS-Ac-kTG"/>
+                                    <outlet property="delegate" destination="zh0-l0-1qA" id="UZM-Nb-h1J"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Op5-D6-G6r" firstAttribute="trailing" secondItem="Gpe-mx-03a" secondAttribute="trailing" id="BW0-Ap-2wK"/>
+                            <constraint firstItem="Op5-D6-G6r" firstAttribute="top" secondItem="Gpe-mx-03a" secondAttribute="top" id="Z5U-rf-CZL"/>
+                            <constraint firstItem="Op5-D6-G6r" firstAttribute="leading" secondItem="Gpe-mx-03a" secondAttribute="leading" id="bUH-Lq-B57"/>
+                            <constraint firstItem="Op5-D6-G6r" firstAttribute="bottom" secondItem="Gpe-mx-03a" secondAttribute="bottom" id="eg5-5e-nfr"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Gpe-mx-03a"/>
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Item" id="xCB-Wu-eSg"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Forums" id="hXF-B8-Gya"/>
+                    <navigationItem key="navigationItem" title="Forum" id="hXF-B8-Gya">
+                        <barButtonItem key="leftBarButtonItem" title="Forums" id="NyX-5S-qvr"/>
+                    </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="Op5-D6-G6r" id="M0p-Kf-tC0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJk-oA-MMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4519" y="-14"/>
+            <point key="canvasLocation" x="3926" y="-36"/>
         </scene>
         <!--Forums-->
         <scene sceneID="Jsk-1H-UiX">
@@ -174,9 +206,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="128.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="zh0-l0-1qA" kind="show" id="02K-4U-l4j"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -209,11 +238,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="tOx-Ny-i7X" id="21k-tq-Crx"/>
+                        <segue destination="zh0-l0-1qA" kind="show" identifier="commentSegue" id="vR7-Sv-qVH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vH4-nG-9J5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2920.8000000000002" y="-36.431784107946029"/>
+            <point key="canvasLocation" x="3036" y="-36"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="X1t-Gl-dqs">
@@ -349,6 +379,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="hTv-6T-Fn0"/>
-        <segue reference="qqa-xr-hbw"/>
+        <segue reference="rup-fA-04U"/>
     </inferredMetricsTieBreakers>
 </document>

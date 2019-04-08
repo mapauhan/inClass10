@@ -15,6 +15,7 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     var forums: [String:Any]?
     var userNow: String?
     var userName: String?
+    var post: Post?
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -60,8 +61,7 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
 }
     
     @IBAction func addButtonClicked(_ sender: Any) {
-        
-        //AppDelegate.showForums()
+      
 }
     
     @IBAction func logoutClicked(_ sender: Any) {
@@ -79,9 +79,20 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as! NewForumViewController
-        destinationVC.userName = self.userName
+        if segue.identifier == "newForumSegue" {
+        
+            let destinationVC = segue.destination as! NewForumViewController
+            destinationVC.userName = self.userName
     }
+        if segue.identifier == "commentSegue" {
+            let destination = segue.destination as! ForumsTwoViewController
+            destination.forum = self.post
+            print("post \(post)")
+            destination.userName = userName
+        }
+        
+}
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -111,6 +122,7 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         cell.nameLabel.text = author!
         cell.multiTextLabel.text = forumData.text! as String
         cell.likesLabel.text = String("\(likes!) likes")
+        cell.idKey.text = forumData.id
         
         //checks if hearticon has been clicked
         if likes! > 0 {
@@ -132,18 +144,39 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
  
         return cell
     }
+ 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let newCell = tableView.dequeueReusableCell(withIdentifier: "forumCell") as! ForumTableViewCell
+        
+        post = Post(newCell.idKey.text!, newCell.nameLabel.text!, newCell.multiTextLabel.text!, Int(newCell.likesLabel.text!),  newCell.multiTextLabel.text!)
+
+        print("Selected row\(userName)")
+        performSegue(withIdentifier: "commentSegue", sender: nil)
+       // selectedRow = indexPath.row
+        
+    }
+    
 }
 
-//extension ForumsViewController: CellDelegate {
-//    func likedClicked(cell: UITableViewCell) {
-//        <#code#>
-//    }
-//
-//    func deleteClicked(cell: UITableViewCell) {
-//        let indexPath = self.tableView.indexPath(for: cell)
+
+
+extension ForumsViewController: CellDelegate {
+    func likedClicked(cell: UITableViewCell) {
+        
+    }
+
+    func deleteClicked(cell: UITableViewCell) {
+        
+        let ref = Database.database().reference()
+        
+        let myCell = cell as! ForumTableViewCell
+        let childRef = Database.database().reference(withPath: myCell.idKey.text!)
+        childRef.removeValue()
+        
+        
 //        forums.remove(at: (indexPath?.row)!)
-//        print(" \(indexPath!) deleted")
-//        tableView.reloadData()
-//
-//    }
-//}
+        //print(" \(indexPath!) deleted")
+        tableView.reloadData()
+
+    }
+}

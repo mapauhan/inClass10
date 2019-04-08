@@ -8,20 +8,6 @@
 
 import Foundation
 
-//class Forums {
-//
-//    var forums: [String:Any]?
-//
-//
-//    init(_ data: [String:Any]) {
-//
-//        forums = data
-//
-//        print("forums \(forums)")
-//    }
-//
-//}
-
 class Forum {
     
     var forums: [String:Any]?
@@ -52,10 +38,10 @@ class Forum {
         
     }
 }
-    
- 
-class Post {
 
+
+class Post {
+    
     var author: String?
     var text: String?
     var likes: Int?
@@ -63,7 +49,7 @@ class Post {
     var id: String?
     
     init(_ id: String?, _ author: String?, _ text: String?, _ likes: Int?, _ comment: String?) {
-
+        
         self.author = author
         self.text = text
         self.id = id

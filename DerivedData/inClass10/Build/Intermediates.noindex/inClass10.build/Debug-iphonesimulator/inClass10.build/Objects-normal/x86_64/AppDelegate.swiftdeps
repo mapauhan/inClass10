@@ -47,6 +47,7 @@ depends-member:
 - ["9inClass1011AppDelegateC", "applicationWillTerminate"]
 - ["9inClass1011AppDelegateC", "deinit"]
 - ["9inClass1011AppDelegateC", "init"]
+- ["9inClass1011AppDelegateC", "showContacts"]
 - ["9inClass1011AppDelegateC", "showForums"]
 - ["9inClass1011AppDelegateC", "showLogin"]
 - ["9inClass1011AppDelegateC", "showSignUp"]
@@ -237,6 +238,7 @@ depends-member:
 - !private ["So8NSObjectC", "makeKeyAndVisible"]
 - !private ["So8NSObjectC", "rootViewController"]
 - !private ["So8NSObjectC", "shared"]
+- ["So8NSObjectC", "showContacts"]
 - ["So8NSObjectC", "showForums"]
 - ["So8NSObjectC", "showLogin"]
 - ["So8NSObjectC", "showSignUp"]
@@ -365,6 +367,7 @@ depends-member:
 - !private ["So11UIResponderC", "makeKeyAndVisible"]
 - !private ["So11UIResponderC", "rootViewController"]
 - !private ["So11UIResponderC", "shared"]
+- ["So11UIResponderC", "showContacts"]
 - ["So11UIResponderC", "showForums"]
 - ["So11UIResponderC", "showLogin"]
 - ["So11UIResponderC", "showSignUp"]
@@ -610,4 +613,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "55c822bf37efb7efbd9759e516a0b04f"
+interface-hash: "1184733b60fe9325b61a96e400daa7dc"
