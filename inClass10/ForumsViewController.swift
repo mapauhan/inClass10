@@ -38,6 +38,18 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
 
         let ref = Database.database().reference()
+        
+        
+        /*
+         
+         {"author": "bsmith", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 28, "comment": [{"content":"awesome!","author":"j"},{"content":"awesome!","author":"j"},{"content":"awesome!","author":"j"}]}
+         
+         **/
+        
+//        let fixComment = [["content":"awesome!","author":"j"],["content":"awesome!","author":"j"],["content":"awesome!","author":"j"]]
+        
+//        ref.childByAutoId().setValue(["author": "bsmith", "content": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum", "likes": 28, "comment": fixComment])
+
         //retrieves all forums
         ref.child("/").observeSingleEvent(of: .value) { (snapshot) in
             if snapshot != nil {
@@ -147,9 +159,18 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
  
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let newCell = tableView.dequeueReusableCell(withIdentifier: "forumCell") as! ForumTableViewCell
         
-        post = Post(newCell.idKey.text!, newCell.nameLabel.text!, newCell.multiTextLabel.text!, Int(newCell.likesLabel.text!),  newCell.multiTextLabel.text!)
+        print("indexPath \(indexPath)")
+        
+        let newCell = tableView.cellForRow(at: indexPath) as! ForumTableViewCell
+        
+        //let newCell = tableView.dequeueReusableCell( "forumCell") as! ForumTableViewCell
+        
+        post = Post(newCell.idKey.text!,
+                    newCell.nameLabel.text!,
+                    newCell.multiTextLabel.text!,
+                    Int(newCell.likesLabel.text!),
+                    newCell.multiTextLabel.text!)
 
         print("Selected row\(userName)")
         performSegue(withIdentifier: "commentSegue", sender: nil)

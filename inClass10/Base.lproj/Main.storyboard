@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Nw-Vn-fRQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Nw-Vn-fRQ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -183,7 +183,11 @@
                         <barButtonItem title="Item" id="xCB-Wu-eSg"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Forum" id="hXF-B8-Gya">
-                        <barButtonItem key="leftBarButtonItem" title="Forums" id="NyX-5S-qvr"/>
+                        <barButtonItem key="leftBarButtonItem" title="Forums" id="NyX-5S-qvr">
+                            <connections>
+                                <segue destination="bFe-pC-7JR" kind="show" id="3P4-wY-8dZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
@@ -388,6 +392,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="rup-fA-04U"/>
+        <segue reference="VRI-h5-X0G"/>
+        <segue reference="3P4-wY-8dZ"/>
     </inferredMetricsTieBreakers>
 </document>
