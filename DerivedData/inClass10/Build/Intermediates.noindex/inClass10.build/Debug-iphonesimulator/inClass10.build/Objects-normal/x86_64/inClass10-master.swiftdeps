@@ -1,12 +1,13 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "cf338444ba447f99966e08c63b377255"
-build_time: [1554762086, 646600000]
+build_time: [1554768172, 149960000]
 inputs:
-  "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/AppDelegate.swift": [1554750409, 0]
-  "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/ForumsViewController.swift": [1554761866, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/AppDelegate.swift": [1554768098, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/ForumsViewController.swift": [1554765115, 0]
   "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/LoginViewController.swift": [1554659435, 0]
   "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/Forum.swift": [1554754718, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/CommentTableViewCell.swift": [1554766730, 0]
   "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/SignUpViewController.swift": [1554659437, 0]
   "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/ForumTableViewCell.swift": [1554754714, 0]
-  "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/ForumsTwoViewController.swift": [1554761149, 0]
+  "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/ForumsTwoViewController.swift": [1554767767, 0]
   "/Users/Maripau/Documents/Spring 2019/MobileApp /inClass10/inClass10/NewForumViewController.swift": [1554746023, 0]

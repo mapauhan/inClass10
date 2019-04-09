@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		sSLaCvq6jojeQu2Y9Mn2KM4PWTo=
+		sHpsEidlGN7dOKXJkmrTwjJADYI=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		9UavzjgnMk+2rlo1muYUI7rxi0g=
+		QygGlJO+rOyrM5Kzk3gQF+Dws9E=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,67 +18,71 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		2KLXVr+gYaiJIiHEWPGeofnTAlc=
+		EsenhVhJew6xYe4VrfIsqCqZ0Ps=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		wdHyaRwtxqHQ3k+vmtmk9G4yrg4=
+		5mhXJ+roOfVXXIOIL5v3Ghib4a4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/ForumsVC.nib</key>
 		<data>
-		7vRIzmqL4+9AFvsnhd48DRn1NMc=
+		v4sFftLqZVCcm0hRhLjE/jjPmzg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		ZQ67jsznTfl3DiNqj+0rv+LKzWk=
+		sGcyM/DlhdEx8f6l7AUaZcZnbFk=
 		</data>
 		<key>Base.lproj/Main.storyboardc/LoginVC.nib</key>
 		<data>
-		rKkC7IxfzStDBGgGyNmgTHT8cVI=
+		Z76Z/f8mTD3Bj5owKdr6Cu1EDCU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/PiR-7i-lvG-view-PfP-DS-2mN.nib</key>
 		<data>
-		n4iqqzTkLvZ8zMrP8wtSfzqENrA=
+		GnDaX/QhIGoT21K80ddUpYtK830=
 		</data>
 		<key>Base.lproj/Main.storyboardc/SignUpVC.nib</key>
 		<data>
-		2Y8byGWJ5kUv2ov3btxZS+ggl1k=
+		GJeOXi55uewt2XqZddqIDEtk/e4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-9Nw-Vn-fRQ.nib</key>
 		<data>
-		Fv6ot+u00Y5Qo7DRcj2B8PTChfE=
+		OoqX/RzrlPWUcgYMeILJLhl1p44=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-bFe-pC-7JR.nib</key>
 		<data>
-		+xEcANQ9BQwS1l/8vdWrQYH1tbU=
+		OKCbOz+i7Kw7W/fCjP7Y/sK3wdw=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-v7O-oq-mcw.nib</key>
 		<data>
-		lzccuUWazH0DEoTehVYJLubfrew=
+		Lt6qymDBLkl8y0kheYKw5WL+HkI=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-zh0-l0-1qA.nib</key>
 		<data>
-		iSomcF3dds1bhWoA+ynKiPU21g4=
+		G7yhTApED1V65A3tAQfOVV+zWj0=
 		</data>
 		<key>Base.lproj/Main.storyboardc/bFe-pC-7JR-view-6J1-Zr-ceA.nib</key>
 		<data>
-		jn6yky8irMnZN+phHZ4nbD9UpkM=
+		Mk6/CBZ9i5PV5razgUB5T3/jGu4=
 		</data>
 		<key>Base.lproj/Main.storyboardc/v7O-oq-mcw-view-EKX-y6-H6V.nib</key>
 		<data>
-		jxsYuAPiTgKjizKjWH3JHH/Y8WI=
+		6JwC/lAN7tctKInQaYDGnkPUrZI=
 		</data>
 		<key>Base.lproj/Main.storyboardc/zh0-l0-1qA-view-X0s-iE-6GV.nib</key>
 		<data>
-		kIPW3RD0GZqR4XBBszbH+54LY+k=
+		g4uui/W2VdVqV7RPLufQrAdHTBI=
+		</data>
+		<key>CommentTableViewCell.nib</key>
+		<data>
+		5L8jm2viTYPlzs4NFQr+gUnkHgc=
 		</data>
 		<key>ForumTableViewCell.nib</key>
 		<data>
-		B6+l1onow4ordUJ2wM2DWHFl+ag=
+		ldJvf0C/TIl8wTEJGHekurfc1l4=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<data>
-		BpPm1R3qnvbno9wDFW8HE8L1jEQ=
+		deULP3AekTWNy+1yMP9EouuEjh0=
 		</data>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
 		<data>
@@ -90,7 +94,7 @@
 		</data>
 		<key>Frameworks/GoogleUtilities.framework/GoogleUtilities</key>
 		<data>
-		eko991YMdL7MOKNWERoxYUhHq1Y=
+		rFmn8LLhphi5YVHEpAQDh4cx50k=
 		</data>
 		<key>Frameworks/GoogleUtilities.framework/Info.plist</key>
 		<data>
@@ -110,7 +114,7 @@
 		</data>
 		<key>Frameworks/leveldb.framework/leveldb</key>
 		<data>
-		0a6f6oFOdAOIhZ8QRThI0qM2TQw=
+		1CxGMhnso58v/mRw8YFidvlCblU=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -174,7 +178,7 @@
 		</data>
 		<key>Frameworks/nanopb.framework/nanopb</key>
 		<data>
-		UVH3XPDUvf32wbxjYyuDJaSdxdc=
+		5LdwLk4pQKt68rsBQ9N+YfeRL/s=
 		</data>
 		<key>GoogleService-Info.plist</key>
 		<data>
@@ -198,11 +202,11 @@
 		</data>
 		<key>inClass10.xcworkspace/xcuserdata/Maripau.xcuserdatad/UserInterfaceState.xcuserstate</key>
 		<data>
-		wetV1JrxlcCatSHMjm33i7Kz240=
+		GzGUOmctDphsfxUZsFMZvesx+II=
 		</data>
 		<key>inClass10.xcworkspace/xcuserdata/Maripau.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist</key>
 		<data>
-		wRhgsP+7hunHYp6Ey5lfuLlewBU=
+		cLTeH+k2xsFESTtSo0fIol5BRYs=
 		</data>
 		<key>inClass10.xcworkspace/xcuserdata/mhandsch.xcuserdatad/UserInterfaceState.xcuserstate</key>
 		<data>
@@ -219,14 +223,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i0bt+yluL8LzSR2J8GqHt8LU5G6wFMu2kKxa2UQtaco=
+			jI6NUFBP/15+M2iOQkchZW1nPCFX7LaXKfAlC/eYxsY=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			inqL0+e+g6j+sYo0HX+vbDTRJKF4CzoyT9CRguuJLps=
+			qfOn1rTGlrW5nmvIMxC5FZKz6iB5spUYKxhyZPQmM9A=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -240,112 +244,119 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BtD0auAz1JHIhgeT9noBGDt8ar/ImMNXgUSqhZCLaqw=
+			KQJv0aMJYoDX6qT9IBGY4a4Aaxcy0Ahko+NFC88OUCE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NczJjZ2N1YwMb2s4Epw8oARJrrxV13FB5vWU3vgiysI=
+			dv0jFfUtzuj8sRhXzaA2Wv57po3RrIYFXev9qJ1Wnzc=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/ForumsVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oumSaPrIa7e7AoNh9WyEOHviENXU/SEgLnvQXw7tB8s=
+			y2Y19Iz9FCiWJMTMvW7LitLgZpcKwu0FdGWw1vlII+Q=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QbxLEhiZqfPFStfNsIAHQecgYOLgs9quRxguMAourzg=
+			y70npHeUFrn5Q43gqKiTLW25nV9EA/mPG2QRcUZkHCs=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/LoginVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FxrOMJ5ZS2/bFumfTe94AzfGpFWQFWRniB2VXdZumo4=
+			Gr9ZeGXyqjbWQqdwe6BBSWGGMIPHI6ofbeD0xL4JR5g=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/PiR-7i-lvG-view-PfP-DS-2mN.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v5HqP8hDL8tHlDJmBwpBgDZy5QOeqXqOwcIo4sBWw/w=
+			Q4epiGTKe5nvGOoHqPwSaM6Sk0Asd89LI/QA24986y4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/SignUpVC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lKKP5/G/QVMfwlVxn6L1t5wpwJkwQdW4u5KTbjHa9lc=
+			BSNx4NgAjGxzcL23oSf9UGhdWSNppJABBUZHQKv779U=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UINavigationController-9Nw-Vn-fRQ.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tcDVWtA67sHtK5IAVYJvfSSKUOx59aOAU8qq13AfHxw=
+			1f4/r53LFBaqr+zrmnzEqUXGfyQfRBXPqkPgQiDK5oo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-bFe-pC-7JR.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oDCJMXUDhCq0l2pK7qJ8bRTcreHIrjFLdOFLr/Pfx78=
+			bOnczRI28vHKM+6RLvyFxdEoIS5m7NukNhRfz/jeQ/w=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-v7O-oq-mcw.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SnSiMBo3R4B1n/ezFcQr2cwQN1LNfkFExEUp4eYVgZ0=
+			joli9E69ehBmndQOldS6jppr+LNOore+U+8AACmO4lo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-zh0-l0-1qA.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TsfQaRCwbKGhQN17GEjfkPx9F8i5ugefaYUdcMvD5Zs=
+			IggEd3aorKHajW9zjGbt3gLDJmpIzndKPab+wHfRnYY=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/bFe-pC-7JR-view-6J1-Zr-ceA.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S1bfSdOxhunLCpfLqTvMAeHMFbqULOv+FrUvIK2ZtUk=
+			esX30ucfLmMxQXluw6Z8dXdywq+bwcdRv6pSPh02MEo=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/v7O-oq-mcw-view-EKX-y6-H6V.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DhgLlv2ugiG78/5HRLciNJifcegT/q0QiW8gGwqIBxc=
+			Gcgv4wKWO5tGaa4DZAfxiFPA3jWOcOI5RO7D0fsztPQ=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/zh0-l0-1qA-view-X0s-iE-6GV.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NXXaQ/HCdhbVDwsUo9hlkv24WCEv2CIx23x0Fr1bk+8=
+			4zbFAqmU3qkPk5AiuL0nqG/61ChJhlM1lFLW9HTjVLM=
+			</data>
+		</dict>
+		<key>CommentTableViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6JkVeNzAeZHvtuTPm+yc5NWImY49EHT5Hp8yYoCNHoM=
 			</data>
 		</dict>
 		<key>ForumTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YgbMr4jOc7UDYs28nIWAeU6ZZYvAcm0xaexEYEvMY8g=
+			LTq+fmnJF+90Asr2RiHLeBC21mp5FLPEGQC2G2pPhEk=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B1AOfAkUQjlqfMmKd/HN3iIlLbIUi0rwHudpOILNIuI=
+			kxWPew78c/7hIaCMK99V9Fo52SzzgImZk66h2iMXpBU=
 			</data>
 		</dict>
 		<key>Frameworks/GTMSessionFetcher.framework/Info.plist</key>
@@ -366,7 +377,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5ucz7HSxyOQ+nXEpgIiTgaw7plKaEvC0tKqPJhG9lXY=
+			aLIWHhEOEWyB3OZMNRl6+Rge0Y7/LRAw/Idxuz4lSmw=
 			</data>
 		</dict>
 		<key>Frameworks/GoogleUtilities.framework/Info.plist</key>
@@ -401,7 +412,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XW0/FnG2ccjq/vm4TAY8RDkE0DkFbvo4BYcFkPxMBQw=
+			Cv35XB97DW5OzGyNfhAt0bajlJpKdSIT1fk59ThmGP8=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -513,7 +524,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U9dEDfWEsYHA7V5AkvZBc+GBSPiQl1YwKNQ2lUAX1p0=
+			068NTV0JhujLhVdeMTfnV+VuaNDbXnAS2ejArJqiKIE=
 			</data>
 		</dict>
 		<key>GoogleService-Info.plist</key>
@@ -541,14 +552,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1eo8K75+hekb/apaQ6XGNE1hT6abBPECMx99YGc+ZoU=
+			3pBv4NswmUnRyIIOlxMQG0ywiC+XTQ0sYqgfy1oEKfo=
 			</data>
 		</dict>
 		<key>inClass10.xcworkspace/xcuserdata/Maripau.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			liTr9NpNELBifQTKC8ndpZlpuSSMNqrmVMuurJHHSKY=
+			jmN2Jq5iWn99d5S2l/p6iFtpWR4Mdd9u+Ru3jt5xvgE=
 			</data>
 		</dict>
 		<key>inClass10.xcworkspace/xcuserdata/mhandsch.xcuserdatad/UserInterfaceState.xcuserstate</key>

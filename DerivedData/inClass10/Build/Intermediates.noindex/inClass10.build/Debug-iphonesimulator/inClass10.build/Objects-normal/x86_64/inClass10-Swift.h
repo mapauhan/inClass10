@@ -197,10 +197,23 @@ SWIFT_CLASS("_TtC9inClass1011AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextField;
+@class UIButton;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9inClass1020CommentTableViewCell")
+@interface CommentTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified commentField;
+- (IBAction)submitClicked:(UIButton * _Nonnull)sender;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UILabel;
 @class UITextView;
 @class UIImageView;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC9inClass1018ForumTableViewCell")
 @interface ForumTableViewCell : UITableViewCell
@@ -249,7 +262,6 @@ SWIFT_CLASS("_TtC9inClass1020ForumsViewController")
 
 
 
-@class UITextField;
 
 SWIFT_CLASS("_TtC9inClass1019LoginViewController")
 @interface LoginViewController : UIViewController

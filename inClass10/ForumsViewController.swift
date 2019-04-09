@@ -87,6 +87,7 @@ class ForumsViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if segue.identifier == "commentSegue" {
             let destination = segue.destination as! ForumsTwoViewController
             destination.forum = self.post
+            destination.forums = self.forums as! [String:Any]
             print("post \(post)")
             destination.userName = userName
         }
